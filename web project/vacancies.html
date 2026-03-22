@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topzonke</title>
+    <link rel="stylesheet" href="Vac.css">
+</head>
+<body>
+
+ <!-- JOB LISTINGS -->
+    <section class="content">
+        <div class="card">
+            <h2>Frontend Developer</h2>
+            <p>We’re looking for a skilled frontend developer with React experience.</p>
+        </div>
+
+        <div class="card">
+            <h2>IT Support Specialist</h2>
+            <p>Provide technical support and solutions for our clients.</p>
+        </div>
+    </section>
+
+    <!-- APPLICATION FORM -->
+    <section class="employ">
+        <h1>Apply Now</h1>
+        <p>Fill in the form below to send your application.</p>
+        <form action="submit_application.php" method="post" enctype="multipart/form-data">
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="position">Position Applying For:</label><br>
+            <select id="position" name="position" required>
+                <option value="Frontend Developer">Frontend Developer</option>
+                <option value="IT Support Specialist">IT Support Specialist</option>
+            </select><br><br>
+
+            <label for="cv">Upload CV:</label><br>
+            <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required><br><br>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Topzonke. All rights reserved.</p>
+</footer>
+```
+
+</body>
+</html>

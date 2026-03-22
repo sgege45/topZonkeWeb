@@ -1,0 +1,48 @@
+body{
+
+	margin:0px;
+
+	
+	
+}
+
+#navigation {
+    background-color: lightgray;
+}
+
+#navigation ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+#navigation li {
+    float: left;
+}
+
+#navigation a {
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+#navigation a:hover {
+    background-color: gray;
+    color: white;
+}
+.No1{
+	background-image:url("mine1.jfif");
+	background-size:cover;
+	width: 50%;
+	height:50%;
+	display:flex ;
+}
+.No2{
+	display:flex ;
+}
+.No3{
+	display:flex ;
+}
