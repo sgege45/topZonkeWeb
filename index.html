@@ -9,6 +9,19 @@
     <title>Topzonke</title>
     <link rel="stylesheet" href="top.css">
 </head>
+
+<script>
+document.addEventListener("scroll", function() {
+  document.querySelectorAll("section").forEach(section => {
+    const rect = section.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      section.classList.remove("hidden");
+    } else {
+      section.classList.add("hidden");
+    }
+  });
+});
+</script>
 <body>
 
 ```
