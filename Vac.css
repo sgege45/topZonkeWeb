@@ -1,23 +1,101 @@
+/* JOB LISTINGS */
 .content {
-	
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
 }
+
 .card {
-	
-background: blue;
-color: white;
-text-align: center;
-padding: 80px 20px;
-
+  background: #004e92; /* deep blue */
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin: 15px;
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
+
+.card h2 {
+  margin-bottom: 15px;
+  color: #ffb347; /* accent orange */
+}
+
 .card img {
-	width: 50%;
-	height: 50%;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
 }
 
+.card p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.card:hover {
+  background-color: #003366;
+  transform: translateY(-5px);
+}
+
+/* APPLICATION FORM */
 .employ {
-background: black;
-color: white;
-text-align: center;
-padding: 80px 20px;
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.employ h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.employ form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.employ label {
+  font-weight: bold;
+}
+
+.employ input,
+.employ select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+.employ button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  background-color: #ff7b00;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.employ button:hover {
+  background-color: white;
+  color: #004e92;
+}
+
+/* FOOTER */
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
 }

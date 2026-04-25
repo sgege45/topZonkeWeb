@@ -9,43 +9,26 @@
 </head>
 <body>
 
- <!-- JOB LISTINGS -->
-    <section class="content">
-        <div class="card">
-            <h2>mining</h2>
-			<img src ="mine1.jfif">
-            <p>We’re looking for a skilled frontend developer with React experience.</p>
-        </div>
+<!-- APPLICATION FORM -->
+		<section class="employ">
+		  <h1>Apply Now</h1>
+		  <p>Fill in the form below to send your application.</p>
+		  <form action="submit_application.php" method="post" enctype="multipart/form-data">
+			<label for="name">Full Name:</label><br>
+			<input type="text" id="name" name="name" required><br><br>
 
-        <div class="card">
-            <h2>renewable energies</h2>
-			<img src = "renewable2.jfif">
-            <p>Skilled technicals for bio energies.</p>
-        </div>
-		<div class="card">
-			<h2>engineering</h2>
-			<img src ="engineering.jfif">
-		</div>
-    </section>
+			<label for="email">Email Address:</label><br>
+			<input type="email" id="email" name="email" required><br><br>
 
-    <!-- APPLICATION FORM -->
-    <section class="employ">
-        <h1>Apply Now</h1>
-        <p>Fill in the form below to send your application.</p>
-        <form action="submit_application.php" method="post" enctype="multipart/form-data">
-            <label for="name">Full Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
-
-            <label for="email">Email Address:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-
-            <label for="position">Position Applying For:</label><br>
-            <select id="position" name="position" required>
-                <option value="engineering">engineering</option>
-                <option value="projectMananger">project mananger</option>
-				<option value="accountant">accountant</option>
-               
-            </select><br><br>
+			<label for="position">Position Applying For:</label><br>
+			<select id="position" name="position" required>
+			  <option value="3d-printing">3D & 4D Printing</option>
+			  <option value="waste-management">Waste Management</option>
+			  <option value="telecommunications">Telecommunications</option>
+			  <option value="engineering">Engineering Solutions</option>
+			  <option value="project-manager">Project Manager</option>
+			  <option value="accountant">Accountant</option>
+			</select><br><br>
 
             <label for="cv">Upload CV:</label><br>
             <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required><br><br>
