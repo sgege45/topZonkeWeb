@@ -1,19 +1,27 @@
 /* RESET */
 body {
-margin: 0;
-font-family: Arial, sans-serif;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
 /* NAVBAR */
 #navigation {
-background-color: #111;
-color: white;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 15px 30px;
+  background-color: #004e92; /* deep blue */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000
 }
-
+#navigation .logo {
+  font-size: 22px;
+  font-weight: bold;
+}
 #navigation ul {
 list-style: none;
 display: flex;
@@ -29,6 +37,7 @@ margin-left: 20px;
 color: white;
 text-decoration: none;
 font-weight: bold;
+transition: color 0.3s ease;
 }
 
 #navigation a:hover {
@@ -44,11 +53,18 @@ padding: 80px 20px;
 background-image: url("mining.jpg");
 background-repeat: no repeat;
 background-size: cover;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 
 .hero h1 {
 font-size: 40px;
+margin-bottom: 20px;
 }
+
 
 .hero button {
 padding: 10px 20px;
@@ -58,25 +74,36 @@ color: white;
 cursor: pointer;
 }
 
-
-
-
-
-.employ button {
-	
-	padding: 10px 20px ; 
-	border: none ;
-	background-color: black ;
-	color: white ;
-	cursor: pointer;
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
 }
 
+
+
+.hero button {
+	
+	padding: 12px 25px ; 
+	margin: 5px;
+	border: none ;
+	background-color: black ;
+	font-weight: bold;
+	color: white ;
+	cursor: pointer;
+	border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.hero button:hover {
+  background-color: white;
+  color: #004e92;
+}
 
 
 /* CONTENT */
 .content {
 display: flex;
 justify-content: space-around;
+flex-wrap: wrap;
 padding: 40px;
 }
 
@@ -88,17 +115,15 @@ width: 25%;
 text-align: center;
 border-radius: 10px;
 }
+.card h2 {
+  color: #004e92;
+}
 
 .card:hover {
 background-color: #ddd;
 }
 
-.employ{
-background: linear-gradient(to right, #ff7b00, #ffb347);
-color: white;
-text-align: center;
-padding: 80px 20px;
-}
+/* ABOUT US */
 
 #about {
   background: linear-gradient(to right, #004e92, #000428); 
@@ -106,7 +131,7 @@ padding: 80px 20px;
   display: flex;
   flex-direction: column;   
   align-items: center;
-  padding: 40px 20px;
+  padding: 60px 20px;
 
 }
 .about-images {
@@ -126,19 +151,51 @@ padding: 80px 20px;
 .about-text {
     margin-top: 20px;
     text-align: center;
-    width: 80%;                 
+    width: 80%;   
+	margin-top: 20px;
+    line-height: 1.6;	
 }
 
+/* PROJECTS / CAREERS / CONTACT */
 
-#join {
-  background: linear-gradient(to right, #ff7b00, #ffb347); 
+.employ {
+  background: linear-gradient(to right, #ff7b00, #ffb347);
   color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+ 
+.employ button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #004e92;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
+.employ button:hover {
+  background-color: white;
+  color: #004e92;
+}
+/* CONTACT IMAGE */
+#contact {
+  background-image: url("renewable1.png"); /* your renewable image */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 60px 20px;
+}
 
-#contact,
+/* VACANCIES */
+
 #vacancies {
-    min-height: 100vh;
+  background-image: url("mineComp.png"); /* your mining team image */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 60px 20px;
+   min-height: 100vh;
     width: 100%;
 
     display: flex;
@@ -150,85 +207,51 @@ padding: 80px 20px;
     background-position: center;
     background-repeat: no-repeat;
 }
-
-/* CONTACT IMAGE */
-#contact {
-    background-image: url("renewable1.png");
+ 
+/* FOOTER */
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 15px;
+font-size: 14px;
 }
-
-/* VACANCIES IMAGE */
-#vacancies {
-    background-image: url("mineComp.png");
-}
-
-.hero button:hover {
-background-color: white;
-color: black;
-}
-
-
-/*  RESPONSIVE ADD-ON */
-
-
-/* Tablets */
+/* RESPONSIVE */
 @media (max-width: 900px) {
-
-```
-.content {
+  .content {
     flex-direction: column;
     align-items: center;
-}
-
-.card {
+  }
+  .card {
     width: 80%;
-    margin-bottom: 20px;
-	
-}
-```
-
+  }
 }
 
-/* Phones */
 @media (max-width: 600px) {
-
-```
-/* Navbar stacks */
-#navigation {
+  #navigation {
     flex-direction: column;
     align-items: flex-start;
-}
-
-#navigation ul {
+  }
+  #navigation ul {
     flex-direction: column;
     width: 100%;
-}
-
-#navigation li {
+  }
+  #navigation li {
     margin: 10px 0;
-}
-
-/* Hero text smaller */
-.hero h1 {
-    font-size: 28px;
-}
-
-.hero p {
+  }
+  .hero h1 {
+    font-size: 32px;
+  }
+  .hero p {
     font-size: 16px;
-}
-
-/* Content spacing */
-.content {
-    flex-direction: column;
-    padding: 20px;
-}
-
-.card {
+  }
+  .card {
     width: 100%;
-    margin-bottom: 20px;
+  }
 }
-```
 
-}
+
+
 /* PROFESSIONALISM */
 section {
     min-height: 100vh;          /* each section fills the viewport */
