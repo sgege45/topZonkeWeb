@@ -8,21 +8,25 @@ body {
 
 /* NAVBAR */
 #navigation {
-  background-color: #004e92;
-  color: white;
+  background-color: white; /*#004e92*/
+  color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
+  padding: 10px 30px;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
-#navigation .logo {
-  font-size: 22px;
-  font-weight: bold;
-}
+
+#navigation .logo img {
+	  height: 70px;                
+  width: auto;                 
+  object-fit: contain;         
+  display: block;
+  background: transparent;    
+  }
 
 #navigation ul {
   list-style: none;
@@ -36,7 +40,7 @@ body {
 }
 
 #navigation a {
-  color: white;
+  color: black;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease;
